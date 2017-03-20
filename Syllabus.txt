@@ -1,0 +1,56 @@
+
+
+Three sessions: 90 min each
+May 2017
+
+# Introduction
+
+## Introductory session (<30)
+
+Why is this important?
+(documentation)
+Look at a paper: could you replicate this study? (good and bad example)
+
+Objective: people should feel bad, but hopeful
+
+## "Methods"
+
+- Preregistration
+
+- Lab notebooks
+
+  * Show old examples (Darwin had notebooks)
+  
+  * What is the modern equivalent?
+  
+    * PyNotebooks? Scripts, documentation, etc.
+
+# Software
+
+- Version control (git)
+
+  * `git init`
+  * `git status`
+  * `git add`
+  * `git commit`
+  * `git pull`
+  * `git push`
+  * `git log`
+  
+  * `git checkout`
+
+- R
+
+- Scripting
+
+- Publishable code is a bonus publication!
+
+# Publication
+
+- Markdown
+
+- Open access
+
+  * Shiny
+  
+  * Reveal.js
