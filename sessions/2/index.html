@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../../lib/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../../lib/reveal/css/theme/beige.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../../lib/reveal/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 
+        '../../lib/reveal/css/print/pdf.css' : '../../lib/reveal/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-markdown>
+          <script type='text/template'>
+            ## Reproducible Research
+
+            ##### Tim Schoof and José Joaquín Atria
+
+            May, 2017 — UCL
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type='text/template'>
+            ## Slide title
+
+            * Bullet point
+
+            * Another bullet
+
+            * Styled with _markdown_!
+
+            <aside class="notes">
+              Speaker notes
+            </aside>
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type='text/template'>
+            ## Another slide
+
+            A paragraph with
+
+            1. An enumerated list
+
+            2. With several items
+
+            3. Some of which are way longer than any bullet point or enumerated item has the right to be, honestly
+
+            <aside class="notes">
+              More speaker notes, you guys
+            </aside>
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type='text/template'>
+            ## Code in a slide
+
+            ```R
+            library(plyr)
+            ldply(
+              plyr:::splitter_d(chickwts, .(feed)),
+              function (df) {
+                return(data.frame(
+                  rows = nrow(df)
+                ))
+              }
+            );
+            ```
+
+            <aside class="notes">
+              Did I mention you can have notes?
+            </aside>
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type='text/template'>
+            ## That's all
+
+            ![asd](https://media.giphy.com/media/6LxGaLrEdGNHi/giphy.gif)
+
+          </script>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../lib/reveal/lib/js/head.min.js"></script>
+    <script src="../../lib/reveal/js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.0,
+        showNotes: false,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: '../../lib/reveal/plugin/markdown/marked.js' },
+          { src: '../../lib/reveal/plugin/markdown/markdown.js' },
+          { src: '../../lib/reveal/plugin/notes/notes.js', async: true },
+          { src: '../../lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
